@@ -78,3 +78,78 @@ You can change the 100px as needed, just change it in both padding-bottom and wi
   overflow: hidden
 }
 
+/* Landmark page layout */
+
+.directions-links{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  padding: 0;
+  margin: 0;
+}
+
+.directions-link{
+display: flex;
+padding: var(--space-2) var(--space-4);
+background-color: var(--action);
+color: var(--button-text);
+text-align: center;
+border-radius: 10px;
+}
+
+.directions-link:hover{
+
+}
+
+/*page stlyinhg */
+
+.landmark-information, .landmark-more-images, .landmark-intro{
+margin-bottom: var(--space-8);
+}
+
+.landmark-intro{
+
+}
+
+#pagination{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 600px){
+      /* this applies to mobile in landscape and some tablets in portrait */
+
+}/*   end min-width 600 */
+
+  
+
+@media (min-width: 900px){
+      /* this applies to tablets */
+.landmark-intro{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+.landmark-information{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-6);
+}
+.landmark-more-images{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}/*   end min-width 900 */
+
+
+@media (min-width: 1200px){
+      /* this applies average laptops */
+
+}/*   end min-width 1200 */
+
+  
+@media (min-width: 1800px){
+      /* this applies to very large screens */
+
+}/*   end min-width 1800 */
